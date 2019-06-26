@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 // styles 
-import "../styles/second-page.css";
+import "../styles/second-page.sass";
 
 export default class Circle extends Component {
     constructor(props) {

@@ -23,12 +23,14 @@ const useStyles = makeStyles({
         height: '6px'
     },
     logo: {
-        maxWidth: '240px',
-        maxHeight: '70px',
+        maxWidth: '340px',
+        width: '70%',
+        maxHeight: '50%',
     },
     navItems: {
         display: 'flex',
         justifyContent: 'center',
+        alignItems: 'center'
     },
     navItemsEach: {
         textTransform: 'capitalize',
@@ -47,19 +49,18 @@ export default function SimpleAppBar() {
                 <Grid container direction="row" justify="space-between" >
                     <img className={classes.logo} src={LOGO_URL} ></img>
                     {
-                        window.screen.width <= 796 ?
-                            <Box mt={2.5} mr={1} className={classes.navItems} justify="center" direction="row">
-                                {console.log('small')}
-                                <TemporaryDrawer />
-                            </Box>
-                            :
-                            <Box p={1} className={classes.navItems} justify="center" direction="row">
-                                {console.log('big')}
+                        // window.screen.width <= 796 ?
+                        <Box alignContent="center" className={classes.navItems}   >
+                            <TemporaryDrawer />
+                        </Box>
+                        // :
+                        // <Box p={1} className={classes.navItems} justify="center" direction="row">
+                        //     {console.log('big')}
 
-                                <Button className={classes.navItemsEach} size="large" color="inherit">Internship/Co-op</Button>
-                                <Button className={classes.navItemsEach} size="large" color="inherit">Student Life</Button>
-                                <Button className={classes.navItemsEach} size="large" color="inherit">Future</Button>
-                            </Box>
+                        //     <Button className={classes.navItemsEach} size="large" color="inherit">Topic 1</Button>
+                        //     <Button className={classes.navItemsEach} size="large" color="inherit">Topic 2</Button>
+                        //     <Button className={classes.navItemsEach} size="large" color="inherit">Topic 3</Button>
+                        // </Box>
                     }
                 </Grid>
                 {/* <Grid>

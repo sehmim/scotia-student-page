@@ -10,6 +10,12 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
+import Avatar from '@material-ui/core/Avatar';
+import Grid from '@material-ui/core/Grid';
+
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
+import '../styles/landing-page.sass'
 
 
 const useStyles = makeStyles({
@@ -21,6 +27,14 @@ const useStyles = makeStyles({
     },
 });
 
+const navBarDetailsMain = [
+    { text: 'Why Scotia', href: '#why-scotia' },
+    { text: 'Item 2', href: '#' },
+    { text: 'Item 3', href: '#' }
+]
+const navBarDetailsSecondary = [
+    'Other', 'Stuff'
+]
 function TemporaryDrawer() {
     const classes = useStyles();
     const [state, setState] = React.useState({
@@ -43,23 +57,36 @@ function TemporaryDrawer() {
             onKeyDown={toggleDrawer(side, false)}
         >
             <List>
-                {['Internship/Co-op', 'Student Life', 'Future'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
+
+                <Grid container justify="center" alignItems="center">
+                    <AnchorLink href='#'>
+                        <img src="https://www.cmrinsurance.com/wp-content/uploads/2018/02/transparent-scotia.png"
+                            style={{ width: '100px', margin: '30px' }}
+                            className="nav-img"
+                        ></img>
+                    </AnchorLink>
+                </Grid>
+
+
+                {navBarDetailsMain.map((item, index) => (
+                    <AnchorLink offset='130' key={index} style={{ textDecoration: 'none', color: 'black' }} href={item.href} >
+                        <ListItem className="nav-item" button component="a" href={item.href}>
+                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                            <ListItemText primary={item.text} />
+                        </ListItem>
+                    </AnchorLink>
                 ))}
             </List>
             <Divider />
             <List>
-                {['Other', 'Stuff'].map((text, index) => (
+                {navBarDetailsSecondary.map((text, index) => (
                     <ListItem button key={text}>
                         <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
                         <ListItemText primary={text} />
                     </ListItem>
                 ))}
             </List>
-        </div>
+        </div >
     );
 
 

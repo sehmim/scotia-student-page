@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import "../styles/second-page.css";
+import "../styles/second-page.sass";
 import Circle from '../component/Circle';
 
 const circle_details = [

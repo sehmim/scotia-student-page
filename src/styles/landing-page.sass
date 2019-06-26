@@ -1,0 +1,23 @@
+@import 'mixings.sass'
+
+.landing-page
+    display: flex
+    justify-content: center
+    height: 100vh
+    background-size: 100%
+    background-origin: content-box
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+
+
+.landing-page-img
+    width: 100%
+    position: relative
+    background: rgba(255, 4, 1, 0.8)
+
+.nav-img
+    transition: all .2s ease
+    cursor: pointer
+    &:hover
+        @include hovering-nav
