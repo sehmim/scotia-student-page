@@ -1,11 +1,12 @@
 .card
     display: inline-block
     perspective: 100rem
-    padding: 80px
-    text-align: center
-    align-items: center
-    max-width: 250px
-    max-height: 250px
+    padding: 70px
+    margin: 10px
+    width: 130px
+    height: 70px
+    border: 1px solid red 
+    border-radius: 10px
     &-img
         width: 50px
         width: 50px
@@ -16,17 +17,22 @@
         transition: all 1s ease
         &--front
             opacity: 1
+            max-width: 250px
         &--back
+            border: 1px solid red
             border-radius: 10px
             max-width: 250px
             position: absolute
             top: 60px
+            left: 6%
             opacity: 0
             transform: rotateY(180deg)
 
     &:hover &_side--front
         transform: rotateY(180deg)
         opacity: .1
+        max-width: 250px
+
     &:hover &_side--back
         transform: rotateY(0deg)
         opacity: 1

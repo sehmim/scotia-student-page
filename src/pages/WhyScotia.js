@@ -15,7 +15,7 @@ const cardValues = [
 ]
 
 const card2Values = [
-    { title: 'Go somewhere that helps you grow', img: 'https://i.imgur.com/wq3xh60.png', details: 'What direction do you want to go in? We’ll support you every step of the way with on-the-job coaching and training programs, higher education courses, and career management tools.' },
+    { title: 'Go somewhere that helps you grow', img: '', details: 'What direction do you want to go in? We’ll support you every step of the way with on-the-job coaching and training programs, higher education courses, and career management tools.' },
     { title: 'Go somewhere with perks', img: 'https://i.imgur.com/N49aUJP.png', details: 'We’ll work together to help you get the most out of our compensation package. That includes your base compensation, incentive pay, benefits, retirement and savings plans.' },
     { title: 'Go somewhere that invests in you', img: 'https://i.imgur.com/k61g5ZV.png', details: 'When it comes to your success, we’ll pull out all the stops. We’ll work hard alongside you to help you reach your full professional (and personal) potential.' },
     { title: 'Go somewhere that fully accepts you', img: 'https://i.imgur.com/NU11Klo.png', details: 'Our team is incredibly diverse, and we like it that way. We won’t just welcome you as you are, we’ll celebrate you as you are.' },
@@ -41,7 +41,7 @@ export default class WhyScotia extends Component {
                 </Box>
 
                 <Box my={3.0}>
-                    <Typography align="left" variant="h4" component="h2"> Our Values </Typography>
+                    <Typography align="left" variant="h4" component="h2"> Do Your Future Self a favor </Typography>
                 </Box>
                 <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-around" >
                     {

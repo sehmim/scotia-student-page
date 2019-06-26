@@ -2,11 +2,10 @@
     background-size: 220%
     color: linear-gradient(120deg,rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.1) 50%)
     perspective: 140rem
-    transition: all .3s ease-out
+    transition: all .4s ease-in-out
     &:hover
         background-size: 100% auto
         box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.2)
-        border: .3px solid black
 
 
 @mixin hover-effect-logo
@@ -30,7 +29,7 @@
         transform: rotateX(15deg)
 
 @mixin hovering-nav
-    transition: all .3s ease
+    transition: all .3s ease-in-out
     &:hover
         text-shadow: 10px 10px 30px rgba(150, 150, 150, .5)
         transform: scale(1.05)
