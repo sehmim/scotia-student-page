@@ -29,11 +29,18 @@
         transform: rotateX(15deg)
 
 @mixin hovering-nav
+    perspective: 240rem
     transition: all .3s ease-in-out
     &:hover
         text-shadow: 10px 10px 30px rgba(150, 150, 150, .5)
         transform: scale(1.05)
+        box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.25)
 
 
-
+@mixin hovering-nav-2
+    perspective: 240rem
+    transition: all .3s ease-in-out
+    &:hover
+        text-shadow: 10px 10px 30px rgba(150, 150, 150, .5)
+        transform: scale(1.05)
 

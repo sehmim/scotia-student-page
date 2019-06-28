@@ -24,8 +24,11 @@ export default class WhyScotia extends Component {
     render() {
         return (
             <div id="why-scotia" className="why-scotia">
-                <Box alignLeft mt={3.0} mb={9.0}>
+                <Box alignLeft mt={3.0}>
                     <Typography align="left" variant="h2" component="h1"> Why Scotiabank </Typography>
+                </Box>
+                <Box >
+                    <Typography align="left" variant="subtitle1" component="h5"> Because your career is a journey - choose the path that allows you to thrive. </Typography>
                 </Box>
                 <Box my={3.0}>
                     <Typography align="left" variant="h4" component="h2"> Our Values </Typography>

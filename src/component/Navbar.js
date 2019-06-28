@@ -1,12 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
-import { fontFamily } from '@material-ui/system';
 import TemporaryDrawer from './Drawer';
+
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 
 const LOGO_URL = "https://i.imgur.com/P4xrlog.png"
 
@@ -16,7 +16,6 @@ const useStyles = makeStyles({
     },
     AppBar: {
         backgroundColor: 'white'
-
     },
     paper: {
         backgroundColor: 'red',
@@ -26,6 +25,7 @@ const useStyles = makeStyles({
         maxWidth: '340px',
         width: '70%',
         maxHeight: '50%',
+        cursor: 'pointer'
     },
     navItems: {
         display: 'flex',

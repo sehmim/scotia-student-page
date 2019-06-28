@@ -29,7 +29,7 @@ const useStyles = makeStyles({
 
 const navBarDetailsMain = [
     { text: 'Why Scotia', href: '#why-scotia' },
-    { text: 'Item 2', href: '#' },
+    { text: 'Meet The Team', href: '#meet-the-team' },
     { text: 'Item 3', href: '#' }
 ]
 const navBarDetailsSecondary = [
@@ -59,7 +59,7 @@ function TemporaryDrawer() {
             <List>
 
                 <Grid container justify="center" alignItems="center">
-                    <AnchorLink href='#'>
+                    <AnchorLink href='#home'>
                         <img src="https://www.cmrinsurance.com/wp-content/uploads/2018/02/transparent-scotia.png"
                             style={{ width: '100px', margin: '30px' }}
                             className="nav-img"
