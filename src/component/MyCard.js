@@ -22,7 +22,6 @@ export default class MyCard extends Component {
                         <Box>
                             <Typography className="header-item" variant="subtitle1" component="p"> {this.props.detailEach.title} </Typography>
                         </Box>
-                        {console.log(this.props.detailEach)}
                     </div>
                     <div className="card_side card_side--back">
                         <p className="body-item"> {this.props.detailEach.details} </p>

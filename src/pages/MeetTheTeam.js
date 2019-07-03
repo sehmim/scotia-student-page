@@ -30,7 +30,7 @@ const MANAGERS = [
     },
     {
         name: 'Ashley Routliffe',
-        title: "Manager, Campus Recruitment Operations, GRM, IB, Marketing and Enterprise Functions",
+        title: "Manager, Campus Recruitment Operations and Enterprise Functions",
         img: 'https://media.licdn.com/dms/image/C5103AQFyC62z37Mh9A/profile-displayphoto-shrink_800_800/0?e=1567036800&v=beta&t=zvsCitmS2dVY2hcBai22tMT5S2tf9ccA35f4auyn7tI',
         linkedIn: 'https://www.linkedin.com/in/ashley-routliffe-4b865153/'
     },
@@ -117,13 +117,12 @@ export default class MeetTheTeam extends Component {
                 <hr></hr>
 
                 <Box justifyContent="center" display="flex" flexWrap="wrap" justifyDirection="row" >
-                    {/* <Avatar size="big" alt="MICHEAL SHELSEN" src="" /> */}
                     {
                         MANAGERS.map((item, index) => {
                             return (
                                 <Box className="avatar-box" key={index} >
-                                    <img className="avatar" src={item.img} />
-                                    <Typography my={10.0} variant="h4" component="p"> {item.name} </Typography>
+                                    <img className="avatar-2" src={item.img} />
+                                    <Typography my={10.0} variant="h5" component="h4"> {item.name} </Typography>
                                     <Typography variant="subtitle2" component="p"> {item.title} </Typography>
                                     <a src={item.linkedIn}>
                                         <img className="avatar-linkedin" src={social_icons.linkedIn} />
@@ -144,13 +143,12 @@ export default class MeetTheTeam extends Component {
                 <hr></hr>
 
                 <Box justifyContent="center" display="flex" flexWrap="wrap" justifyDirection="row" >
-                    {/* <Avatar size="big" alt="MICHEAL SHELSEN" src="" /> */}
                     {
                         RECRUTERS.map((item, index) => {
                             return (
                                 <Box className="avatar-box" key={index} >
-                                    <img className="avatar" src={item.img} />
-                                    <Typography my={10.0} variant="h4" component="h2"> {item.name} </Typography>
+                                    <img className="avatar-2" src={item.img} />
+                                    <Typography my={10.0} variant="h5" component="h4"> {item.name} </Typography>
                                     <Typography variant="subtitle2" component="p"> {item.title} </Typography>
                                     <a src={item.linkedIn}>
                                         <img className="avatar-linkedin" src={social_icons.linkedIn} />
