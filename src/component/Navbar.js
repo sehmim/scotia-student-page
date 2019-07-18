@@ -8,7 +8,7 @@ import TemporaryDrawer from './Drawer';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
-const LOGO_URL = "https://i.imgur.com/P4xrlog.png"
+const LOGO_URL = process.env.PUBLIC_URL + "/assets/logo.png"
 
 const useStyles = makeStyles({
     root: {
@@ -23,8 +23,9 @@ const useStyles = makeStyles({
     },
     logo: {
         maxWidth: '340px',
-        width: '70%',
+        width: '60%',
         maxHeight: '50%',
+        height: '30%',
         cursor: 'pointer'
     },
     navItems: {

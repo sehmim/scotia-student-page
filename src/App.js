@@ -7,6 +7,7 @@ import WhyScotia from './pages/WhyScotia';
 import MeetTheTeam from './pages/MeetTheTeam';
 import WhyScotiaWordy from './pages/WhyScotiaWordy';
 import CampusEvents from './pages/CampusEvents';
+import Program from './pages/Program';
 
 export default class App extends Component {
   render() {
@@ -17,6 +18,7 @@ export default class App extends Component {
         <WhyScotia />
         <MeetTheTeam />
         <CampusEvents />
+        <Program />
       </div>
     )
   }

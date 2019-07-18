@@ -34,15 +34,22 @@ export default class MyCalender extends Component {
         }
     }
 
+
     onChange = (date) => {
         this.setState({ date })
-        list_of_events.forEach(element => {
-            if ((element.date.getDate() === this.state.date.getDate())
-                &&
-                (element.date.getMonth() === this.state.date.getMonth())) {
-                console.log('Hi')
-            }
-        });
+
+        // list_of_events.forEach(element => {
+        //     if ((element.date.getDate() === this.state.date.getDate())
+        //         &&
+        //         (element.date.getMonth() === this.state.date.getMonth())) {
+
+        //         this.setState({
+        //             date: this.date,
+        //             title: element.title,
+        //             details: element.details,
+        //         })
+        //     }
+        // });
     }
     render() {
         return (
@@ -54,17 +61,17 @@ export default class MyCalender extends Component {
                     onClickDay={this.showEvent}
                 />
                 <div>
-                    <Card>
+                    {/* <Card>  
                         <Typography>
-                            Title:
-                    </Typography>
+                            Title: {this.state.eventDetails}
+                        </Typography>
                         <Typography>
-                            Date: {this.state.date.toDateString()}
+                            Date: {this.state.date}
                         </Typography>
                         <Typography>
                             Details:
                     </Typography>
-                    </Card>
+                    </Card> */}
                 </div>
             </Box>
         )

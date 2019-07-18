@@ -9,9 +9,9 @@ import MyCalender from '../component/MyCalender';
 export default class CampusEvents extends Component {
     render() {
         return (
-            <div className="campus-events">
+            <div id="events" className="campus-events">
                 <hr></hr>
-                <Box>
+                <Box my={4} >
                     <Typography align="center" variant="h2" component="h1"> Campus Events </Typography>
                 </Box>
                 <hr></hr>

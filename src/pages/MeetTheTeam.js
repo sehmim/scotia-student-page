@@ -86,8 +86,8 @@ export default class MeetTheTeam extends Component {
         return (
             <div id="meet-the-team" className="meet-the-team">
                 <Box alignLeft my={3.0}>
-                    <Typography align="left" variant="h2" component="h1"> Meet The Team </Typography>
-                    <Typography align="left" variant="subtitle1" component="h1"> Even Kawhi Leonard has a team behind his back, here's yours </Typography>
+                    <Typography align="center" variant="h2" component="h1"> Meet The Team </Typography>
+                    <Typography align="center" variant="subtitle1" component="h1"> Even Kawhi Leonard has a team behind his back, here's yours </Typography>
                 </Box>
 
                 {/* MICHEAL SHELSEN */}

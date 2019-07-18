@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 import "../styles/landing-page.sass";
 
 
-const BG_IMG_URL = 'https://s9.postimg.cc/73mqt4lq7/image.gif'
+
+const BG_IMG_URL = process.env.PUBLIC_URL + '/assets/background1.jpg'
 export default class LandingPage extends Component {
     render() {
         return (

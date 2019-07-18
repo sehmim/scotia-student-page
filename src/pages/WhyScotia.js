@@ -24,14 +24,16 @@ export default class WhyScotia extends Component {
     render() {
         return (
             <div id="why-scotia" className="why-scotia">
-                <Box alignLeft mt={3.0}>
-                    <Typography align="left" variant="h2" component="h1"> Why Scotiabank </Typography>
+                <hr></hr>
+                <Box alignCenter mt={3.0}>
+                    <Typography align="center" variant="h2" component="h1"> Why Scotiabank </Typography>
                 </Box>
-                <Box >
-                    <Typography align="left" variant="subtitle1" component="h5"> Because your career is a journey - choose the path that allows you to thrive. </Typography>
+                <Box mb={3.0}>
+                    <Typography align="center" variant="subtitle1" component="h5"> Because your career is a journey - choose the path that allows you to thrive. </Typography>
                 </Box>
+                <hr></hr>
                 <Box my={3.0}>
-                    <Typography align="left" variant="h4" component="h2"> Our Values </Typography>
+                    <Typography align="center" variant="h4" component="h5"> Our Values </Typography>
                 </Box>
                 <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-around" >
                     {
@@ -44,7 +46,7 @@ export default class WhyScotia extends Component {
                 </Box>
 
                 <Box my={3.0}>
-                    <Typography align="left" variant="h4" component="h2"> Do Your Future Self a favor </Typography>
+                    <Typography align="center" variant="h4" component="h2"> Do Your Future Self a favor </Typography>
                 </Box>
                 <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-around" >
                     {

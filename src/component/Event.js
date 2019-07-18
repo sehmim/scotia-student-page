@@ -10,7 +10,7 @@ export default class Event extends Component {
     render() {
         return (
             <div>
-                {console.log(this.props)}
+                {/* {console.log(this.props)} */}
 
             </div>
         )
