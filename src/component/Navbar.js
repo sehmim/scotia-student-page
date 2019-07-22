@@ -8,7 +8,7 @@ import TemporaryDrawer from './Drawer';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
-const LOGO_URL = process.env.PUBLIC_URL + "/assets/logo.png"
+const LOGO_URL = require("../assets/logo.png")
 
 const useStyles = makeStyles({
     root: {

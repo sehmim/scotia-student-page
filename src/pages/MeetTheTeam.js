@@ -6,8 +6,9 @@ import Grid from '@material-ui/core/Grid';
 import { Box } from '@material-ui/core';
 
 
-const MICHEAL_IMG = process.env.PUBLIC_URL + "/assets/Micheal.jpg"
+const MICHEAL_IMG = process.env.PUBLIC_URL + "/assets/micheal.jpg"
 
+const MICHEAL_IMG2 = require("../assets/micheal.png");
 
 const social_icons = {
     linkedIn: 'https://pngimg.com/uploads/linkedIn/linkedIn_PNG27.png'
@@ -104,7 +105,7 @@ export default class MeetTheTeam extends Component {
                     {/* <Avatar size="big" alt="MICHEAL SHELSEN" src="" /> */}
                     <Box mb={3.0} >
                         {console.log('POOOP', DIRECTOR.img)}
-                        <img className="avatar" src={DIRECTOR.img} />
+                        <img className="avatar" src={MICHEAL_IMG2} />
                         <Typography minH my={10.0} variant="h4" component="h2"> {DIRECTOR.name} </Typography>
                         <Typography variant="subtitle1" component="p"> {DIRECTOR.title} </Typography>
                         <a href='https://www.linkedin.com/in/michaelshelsen'>
