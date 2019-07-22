@@ -8,7 +8,7 @@ import MyCard from "../component/MyCard";
 
 
 const cardValues = [
-    { title: 'Respect', img: 'https://i.imgur.com/y6SW8XD.png', details: 'Everyone is always treated with dignity; diverse backgrounds and experiences are what make us better as a whole.' },
+    { title: 'Respect', img: '../assets/Icon/Respect.png', details: 'Everyone is always treated with dignity; diverse backgrounds and experiences are what make us better as a whole.' },
     { title: 'Integrity', img: 'https://i.imgur.com/HFKOprR.png', details: 'Acting honorably comes first – earning the trust of our customers (and each other) is what matters most.' },
     { title: 'Passion', img: 'https://i.imgur.com/05Eec7W.png', details: 'We’re enthusiastic about what we do, and want you to feel the same way. Imagine coming in to work, and actually feeling excited to learn!' },
     { title: 'Accountability', img: 'https://i.imgur.com/i30dZZR.png', details: 'We commit, we take action, and most importantly, we take responsibility for those actions. It’s just the right thing to do.' },

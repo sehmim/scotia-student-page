@@ -15,9 +15,6 @@ export default class CampusEvents extends Component {
                     <Typography align="center" variant="h2" component="h1"> Campus Events </Typography>
                 </Box>
                 <hr></hr>
-
-
-                {/* ---------------------------------- */}
                 <MyCalender />
             </div>
         )

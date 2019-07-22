@@ -4,7 +4,10 @@ import Typography from '@material-ui/core/Typography';
 import '../styles/meet-the-team.sass'
 import Grid from '@material-ui/core/Grid';
 import { Box } from '@material-ui/core';
-import GridList from '@material-ui/core/GridList';
+
+
+const MICHEAL_IMG = process.env.PUBLIC_URL + "/assets/Micheal.jpg"
+
 
 const social_icons = {
     linkedIn: 'https://pngimg.com/uploads/linkedIn/linkedIn_PNG27.png'
@@ -12,20 +15,20 @@ const social_icons = {
 const DIRECTOR = {
     name: 'Micheal Shelsen',
     title: 'Director of Global Campus Talent Acquisition and Development',
-    img: 'https://media.licdn.com/dms/image/C4E03AQH6_9LadYrBxA/profile-displayphoto-shrink_800_800/0?e=1567036800&v=beta&t=p6af7pzjWkvtCO_MB2HlQYoSpJXCfBOwqf4nKAFJit8',
+    img: "../Michael.jpg",
     href: 'https://www.linkedin.com/in/michaelshelsen'
 }
 const MANAGERS = [
     {
         name: 'Arina Levko',
         title: 'Manager, Campus Recruitment Technology Solutions and Digital',
-        img: 'https://media.licdn.com/dms/image/C4D03AQGTGklJ8RBjSA/profile-displayphoto-shrink_800_800/0?e=1567036800&v=beta&t=f53POD2R_vf6c0s-DyAhvm8s1swsx8_l5ixrAPi5FXc',
+        img: '../../public/assets/recruiters/Arina.jpg',
         linkedIn: 'https://www.linkedin.com/in/arinalevko/'
     },
     {
         name: 'Jessica McKenzie',
         title: 'Program Manager, Ignition and Velocity',
-        img: 'https://media.licdn.com/dms/image/C5603AQECL0AHDG2crQ/profile-displayphoto-shrink_800_800/0?e=1567036800&v=beta&t=XuMC8ETvX94NSVTAIQ32H2JNZJAssdRCo8xDTXgmDgg',
+        img: '../../public/assets/recruiters/Jessica.jpg',
         linkedIn: 'https://www.linkedin.com/in/jessicamckenzie-scotiabank/'
     },
     {
@@ -84,10 +87,11 @@ const RECRUTERS = [
 export default class MeetTheTeam extends Component {
     render() {
         return (
+
             <div id="meet-the-team" className="meet-the-team">
+                {console.log('public url: ', process.env.PUBLIC_URL)}
                 <Box alignLeft my={3.0}>
                     <Typography align="center" variant="h2" component="h1"> Meet The Team </Typography>
-                    <Typography align="center" variant="subtitle1" component="h1"> Even Kawhi Leonard has a team behind his back, here's yours </Typography>
                 </Box>
 
                 {/* MICHEAL SHELSEN */}
@@ -99,15 +103,15 @@ export default class MeetTheTeam extends Component {
                 <Grid align="center" >
                     {/* <Avatar size="big" alt="MICHEAL SHELSEN" src="" /> */}
                     <Box mb={3.0} >
+                        {console.log('POOOP', DIRECTOR.img)}
                         <img className="avatar" src={DIRECTOR.img} />
                         <Typography minH my={10.0} variant="h4" component="h2"> {DIRECTOR.name} </Typography>
                         <Typography variant="subtitle1" component="p"> {DIRECTOR.title} </Typography>
-                        <a src={DIRECTOR.href}>
+                        <a href='https://www.linkedin.com/in/michaelshelsen'>
                             <img className="avatar-linkedin" src={social_icons.linkedIn} />
                         </a>
                     </Box>
                 </Grid>
-
                 {/* THE MANAGERS */}
 
                 <hr></hr>
@@ -124,7 +128,7 @@ export default class MeetTheTeam extends Component {
                                     <img className="avatar-2" src={item.img} />
                                     <Typography my={10.0} variant="h5" component="h4"> {item.name} </Typography>
                                     <Typography variant="subtitle2" component="p"> {item.title} </Typography>
-                                    <a src={item.linkedIn}>
+                                    <a href={item.linkedIn}>
                                         <img className="avatar-linkedin" src={social_icons.linkedIn} />
                                     </a>
                                 </Box>
