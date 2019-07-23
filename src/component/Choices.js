@@ -1,20 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import clsx from 'clsx';
 import SwipeableViews from 'react-swipeable-views';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-import Zoom from '@material-ui/core/Zoom';
-import Fab from '@material-ui/core/Fab';
-import AddIcon from '@material-ui/icons/Add';
-import EditIcon from '@material-ui/icons/Edit';
-import UpIcon from '@material-ui/icons/KeyboardArrowUp';
+
 import { green } from '@material-ui/core/colors';
 import ProgramEach from "../component/ProgramEach";
 import { Box } from '@material-ui/core';
+
+import { TechPrograms } from "../utils/TechPrograms";
+import { BankingProgram } from "../utils/BankingProgram";
+
 
 function TabContainer(props) {
     const { children, dir } = props;
@@ -50,6 +49,9 @@ const useStyles = makeStyles(theme => ({
             backgroundColor: green[600],
         },
     },
+    tab: {
+        fontSize: '10px',
+    }
 }));
 
 export default function FloatingActionButtonZoom() {
@@ -65,24 +67,23 @@ export default function FloatingActionButtonZoom() {
         setValue(index);
     }
 
-    const transitionDuration = {
-        enter: theme.transitions.duration.enteringScreen,
-        exit: theme.transitions.duration.leavingScreen,
-    };
 
     return (
         <div className={classes.root}>
             <AppBar position="static" color="default">
+
                 <Tabs
+                    style={{ padding: '10px', fontSize: '10px' }}
                     value={value}
                     onChange={handleChange}
                     indicatorColor="primary"
                     textColor="primary"
                     variant="fullWidth"
                 >
-                    <Tab label="Undergrad co-op" />
-                    <Tab label="Masters Internship" />
-                    <Tab label="Fresh Grads" />
+                    <Tab className={classes.tab} label="Technology" />
+                    <Tab className={classes.tab} label="Banking" />
+                    <Tab className={classes.tab} label="Operations" />
+                    <Tab className={classes.tab} label="Others" />
                 </Tabs>
             </AppBar>
             <SwipeableViews
@@ -91,28 +92,48 @@ export default function FloatingActionButtonZoom() {
                 onChangeIndex={handleChangeIndex}
             >
 
+                {/* -------- TECHNOLOGY ------- */}
                 <TabContainer dir={theme.direction}>
+                    <Box display="flex" justifyContent="space-around" flexWrap="wrap"  >
+                        {
+                            TechPrograms.map((item, index) => {
+                                return (
+                                    <ProgramEach title={item.title} details={item.details} options={item.where} />
+                                )
+                            })
+                        }
+                    </Box>
+                </TabContainer>
+
+                {/* -------- Global Marketing ------- */}
+                <TabContainer dir={theme.direction}>
+                    <Box display="flex" justifyContent="space-around" flexWrap="wrap"  >
+                        {
+                            BankingProgram.map((item, index) => {
+                                return (
+                                    <ProgramEach title={item.title} details={item.details} options={item.where} />
+                                )
+                            })
+                        }
+                    </Box>
+                </TabContainer>
+                {/* -------- Global Banking ------- */}
+                {/* <TabContainer dir={theme.direction}>
                     <Box display="flex" justifyContent="space-around" flexWrap="wrap"  >
                         <ProgramEach title='Banking Stuff' />
                         <ProgramEach title='Tech Stuff' />
                         <ProgramEach title='Marketing Stuff' />
                     </Box>
-                </TabContainer>
-                <TabContainer dir={theme.direction}>
+                </TabContainer> */}
+                {/* -------- Others ------- */}
+                {/* <TabContainer dir={theme.direction}>
                     <Box display="flex" justifyContent="space-around" flexWrap="wrap"  >
                         <ProgramEach title='Banking Stuff' />
                         <ProgramEach title='Tech Stuff' />
                         <ProgramEach title='Marketing Stuff' />
                     </Box>
-                </TabContainer>
-                <TabContainer dir={theme.direction}>
-                    <Box display="flex" justifyContent="space-around" flexWrap="wrap"  >
-                        <ProgramEach title='Banking Stuff' />
-                        <ProgramEach title='Tech Stuff' />
-                        <ProgramEach title='Marketing Stuff' />
-                    </Box>
-                </TabContainer>
+                </TabContainer> */}
             </SwipeableViews>
-        </div>
+        </div >
     );
 }

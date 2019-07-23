@@ -17,12 +17,15 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { Box } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
-import { fontSize } from '@material-ui/system';
+import { fontSize, minWidth } from '@material-ui/system';
+import { parse } from 'path';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
 
 const useStyles = makeStyles(theme => ({
     card: {
-        maxWidth: 305,
-        margin: '25px'
+        margin: '25px 0px 25px 0px',
+        minWidth: 355,
+        maxWidth: 355
     },
     media: {
         height: 0,
@@ -48,6 +51,15 @@ const useStyles = makeStyles(theme => ({
         border: '1px solid grey',
         fontSize: '10px',
         margin: '5px'
+    },
+    btn2: {
+        position: 'relative',
+        bottom: '0px'
+    },
+    title: {
+        height: '40px',
+        margin: '0px 0px 10px 0px',
+        fontSize: '25px'
     }
 }));
 
@@ -61,48 +73,28 @@ export default function ProgramEach(props) {
 
     return (
         <Card className={classes.card}>
-            {console.log(props)}
             <CardMedia
                 className={classes.media}
                 image="https://pixel.nymag.com/imgs/daily/vulture/2018/11/27/27-spongebob-squarepants.w700.h700.jpg"
-                title="Paella dish"
             />
             <CardContent>
-                <Typography variant="h4" component="p">{ props.title }</Typography>
+                <Typography className={classes.title} variant="h4" component="p">{props.title}</Typography>
                 <Box>
-                    <Button className={classes.btn}> Undergrad </Button>
-                    <Button className={classes.btn}> Banking </Button>
-                    <Button className={classes.btn}> Technology </Button>
+                    {
+                        props.options.map((item, index) => {
+                            return (<Button className={classes.btn}> {item} </Button>)
+                        })
+                    }
                 </Box>
-                <Typography c>
-                    This impressive paella is a perfect party dish and a fun meal to cook together with your
-                    guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                <Typography style={{ height: '170px' }} >
+                    {props.details}
                 </Typography>
+                <BottomNavigation>
+                    <Button
+                        variant="outlined" href={props.link}
+                        className={classes.btn2} fullWidth > Learn More </Button>
+                </BottomNavigation>
             </CardContent>
-            <IconButton
-                className={clsx(classes.expand, {
-                    [classes.expandOpen]: expanded,
-                })}
-                onClick={handleExpandClick}
-                aria-expanded={expanded}
-                aria-label="Show more"
-            >
-                <CardActions >
-                    <ExpandMoreIcon />
-                </CardActions>
-            </IconButton>
-            <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent>
-                    <Typography paragraph>Method:</Typography>
-                    <Typography paragraph>
-                        Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10
-                        minutes.
-                    </Typography>
-                    <a>
-                        APPLY NOW
-                    </a>
-                </CardContent>
-            </Collapse>
         </Card>
     );
 }

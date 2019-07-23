@@ -16,9 +16,9 @@ export default class App extends Component {
         <SimpleAppBar />
         <LandingPage />
         <WhyScotia />
-        <MeetTheTeam />
-        <CampusEvents />
         <Program />
+        <CampusEvents />
+        <MeetTheTeam />
       </div>
     )
   }
