@@ -61,78 +61,78 @@ const BankingProgram = [
         ],
         link: ''
     },
-    {
-        title: 'Sales and Trading',
-        details: 'A challenging area in the Global Banking and Markets that provides practical knowledge and experience in Credit Derivatives and Emerging Markets, Debt Capital Markets, Equity Derivatives, Equity Sales and Trading, Financial Services, Fixed Income, Prime Services, and Risk Solutions.',
-        where: [
-            'Co-op/Internship',
-            'Undergraduate',
-            'Graduate'
-        ],
-        link: ''
-    },
-    {
-        title: 'Wealth Management',
-        details: 'A competitive area in the largest business line by revenue that builds on core financial planning and complementary client discovery skills with ongoing coaching and support.',
-        where: [
-            'Co-op/Internship',
-            'Undergraduate',
-            'Graduate',
-        ],
-        link: ''
-    },
-    {
-        title: 'Corporate Banking',
-        details: 'A stimulating area that builds knowledge, skills, and expertise in relationship management and credit-related activities with current major Canadian and global companies in a wide range of sectors.',
-        where: [
-            'Co-op/Internship',
-            'Graduate',
-            'MBA'
-        ],
-        link: ''
-    },
-    {
-        title: 'Capital Markets Summer Internship (London, UK)',
-        details: "A 10 week internship for penultimate year students beginning every June that accelerates development in Sales & Trading, Debt Capital Markets, Prime Services and Origination.",
-        where: [
-            'Co-op/Internship',
-            'Undergraduate',
-        ],
-        link: ''
-    },
-    {
-        title: 'IB – Program',
-        details: 'A two week program designed to work in a dynamic environment that provides exposure to many departments that will provide ongoing feedback, advice, and mentorship to managing and cultivating client relationships.',
-        where: [
-            'Recent Graduate',
-            'Undergraduate',
-            'Graduate',
-            'MBA'
-        ],
-        link: ''
-    },
-    {
-        title: 'Accelerate [Commercial Banking]',
-        details: 'A 12 to 18-month program in a fast-paced, client facing area designed to provide opportunities to learn, practice, and apply skills in the Commercial Banking world.',
-        where: [
-            'Recent Graduate',
-            'Undergraduate',
-            'Graduate',
-            'MBA'
-        ],
-        link: ''
-    },
-    {
-        title: 'Wealth Management Associate – Program',
-        details: 'A one year program that develops core financial planning skills and complementary client discovery skills through exposure to a sales and entrepreneurial environment.',
-        where: [
-            'Recent Graduate',
-            'Undergraduate',
-            'Graduate',
-            'MBA'
-        ],
-        link: ''
-    },
+    // {
+    //     title: 'Sales and Trading',
+    //     details: 'A challenging area in the Global Banking and Markets that provides practical knowledge and experience in Credit Derivatives and Emerging Markets, Debt Capital Markets, Equity Derivatives, Equity Sales and Trading, Financial Services, Fixed Income, Prime Services, and Risk Solutions.',
+    //     where: [
+    //         'Co-op/Internship',
+    //         'Undergraduate',
+    //         'Graduate'
+    //     ],
+    //     link: ''
+    // },
+    // {
+    //     title: 'Wealth Management',
+    //     details: 'A competitive area in the largest business line by revenue that builds on core financial planning and complementary client discovery skills with ongoing coaching and support.',
+    //     where: [
+    //         'Co-op/Internship',
+    //         'Undergraduate',
+    //         'Graduate',
+    //     ],
+    //     link: ''
+    // },
+    // {
+    //     title: 'Corporate Banking',
+    //     details: 'A stimulating area that builds knowledge, skills, and expertise in relationship management and credit-related activities with current major Canadian and global companies in a wide range of sectors.',
+    //     where: [
+    //         'Co-op/Internship',
+    //         'Graduate',
+    //         'MBA'
+    //     ],
+    //     link: ''
+    // },
+    // {
+    //     title: 'Capital Markets Summer Internship (London, UK)',
+    //     details: "A 10 week internship for penultimate year students beginning every June that accelerates development in Sales & Trading, Debt Capital Markets, Prime Services and Origination.",
+    //     where: [
+    //         'Co-op/Internship',
+    //         'Undergraduate',
+    //     ],
+    //     link: ''
+    // },
+    // {
+    //     title: 'IB – Program',
+    //     details: 'A two week program designed to work in a dynamic environment that provides exposure to many departments that will provide ongoing feedback, advice, and mentorship to managing and cultivating client relationships.',
+    //     where: [
+    //         'Recent Graduate',
+    //         'Undergraduate',
+    //         'Graduate',
+    //         'MBA'
+    //     ],
+    //     link: ''
+    // },
+    // {
+    //     title: 'Accelerate [Commercial Banking]',
+    //     details: 'A 12 to 18-month program in a fast-paced, client facing area designed to provide opportunities to learn, practice, and apply skills in the Commercial Banking world.',
+    //     where: [
+    //         'Recent Graduate',
+    //         'Undergraduate',
+    //         'Graduate',
+    //         'MBA'
+    //     ],
+    //     link: ''
+    // },
+    // {
+    //     title: 'Wealth Management Associate – Program',
+    //     details: 'A one year program that develops core financial planning skills and complementary client discovery skills through exposure to a sales and entrepreneurial environment.',
+    //     where: [
+    //         'Recent Graduate',
+    //         'Undergraduate',
+    //         'Graduate',
+    //         'MBA'
+    //     ],
+    //     link: ''
+    // },
 ]
 
 export { BankingProgram }

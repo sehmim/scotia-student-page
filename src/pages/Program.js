@@ -1,14 +1,8 @@
 import React, { Component } from 'react'
-import ProgramEach from '../component/ProgramEach';
 import { Box } from '@material-ui/core';
 import Choices from '../component/Choices'
 import Typography from '@material-ui/core/Typography';
-
-const programDetail = [
-    {
-        programTitle: '', subDetails: "This impressive paella is a perfect party dish."
-    }
-]
+import Button from '@material-ui/core/Button';
 
 
 export default class Program extends Component {
@@ -22,6 +16,9 @@ export default class Program extends Component {
                 <hr></hr>
                 <Box mt={6} display="flex" justifyContent="space-around" flexWrap="wrap" >
                     <Choices />
+                </Box>
+                <Box p={0.0} m={0.0} display="flex" justifyContent="flex-end">
+                    <Button variant="outlined" href="#outlined-buttons"> See More...</Button>
                 </Box>
             </div>
         )
