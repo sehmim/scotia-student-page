@@ -83,7 +83,7 @@ export default function FloatingActionButtonZoom() {
                     <Tab className={classes.tab} label="Technology" />
                     <Tab className={classes.tab} label="Banking" />
                     <Tab className={classes.tab} label="Operations" />
-                    <Tab className={classes.tab} label="Others" />
+                    <Tab className={classes.tab} label="Specialties" />
                 </Tabs>
             </AppBar>
             <SwipeableViews

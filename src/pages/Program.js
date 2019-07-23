@@ -8,10 +8,10 @@ import Button from '@material-ui/core/Button';
 export default class Program extends Component {
     render() {
         return (
-            <div id="programs" style={{ margin: '7vw' }}>
+            <div id="catalogue" style={{ margin: '7vw' }}>
                 <hr></hr>
                 <Box my={3} >
-                    <Typography align="center" variant="h2" component="h1"> Programs </Typography>
+                    <Typography align="center" variant="h2" component="h1"> Catalogue </Typography>
                 </Box>
                 <hr></hr>
                 <Box mt={6} display="flex" justifyContent="space-around" flexWrap="wrap" >

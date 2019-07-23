@@ -15,6 +15,7 @@ export default class App extends Component {
       <div className="App">
         <SimpleAppBar />
         <LandingPage />
+        {/* <WhyScotiaWordy /> */}
         <WhyScotia />
         <Program />
         <CampusEvents />

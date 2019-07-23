@@ -15,10 +15,10 @@ const cardValues = [
 ]
 
 const card2Values = [
-    { title: 'Your Growth', img: require('../assets/icon/Growth.png'), details: 'What direction do you want to go in? We’ll support you every step of the way with on-the-job coaching and training programs, higher education courses, and career management tools.' },
-    { title: 'Your Perks', img: require('../assets/icon/Perks.png'), details: 'We’ll work together to help you get the most out of our compensation package. That includes your base compensation, incentive pay, benefits, retirement and savings plans.' },
-    { title: 'Your Future Investment', img: require('../assets/icon/Invest.png'), details: 'When it comes to your success, we’ll pull out all the stops. We’ll work hard alongside you to help you reach your full professional (and personal) potential.' },
-    { title: 'Acceptance', img: require('../assets/icon/Accepted.png'), details: 'Our team is incredibly diverse, and we like it that way. We won’t just welcome you as you are, we’ll celebrate you as you are.' },
+    { title: 'Your Growth', img: require('../assets/icon/Growth.png'), details: 'We’ll support you with coaching and training, higher education, and career management tools.' },
+    { title: 'Your Perks', img: require('../assets/icon/Perks.png'), details: 'We’ll work together to get you the most out of our compensation package.' },
+    { title: 'Your Path', img: require('../assets/icon/Invest.png'), details: 'We’ll work hard alongside you to help you reach your full professional (and personal) potential.' },
+    { title: 'Acceptance', img: require('../assets/icon/Accepted.png'), details: 'Our team is incredibly diverse, and we won’t just welcome you as you are, we’ll celebrate you as you are.' },
 ]
 export default class WhyScotia extends Component {
     render() {

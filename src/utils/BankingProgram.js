@@ -101,7 +101,7 @@ const BankingProgram = [
     //     link: ''
     // },
     // {
-    //     title: 'IB – Program',
+    //     title: 'IB Program',
     //     details: 'A two week program designed to work in a dynamic environment that provides exposure to many departments that will provide ongoing feedback, advice, and mentorship to managing and cultivating client relationships.',
     //     where: [
     //         'Recent Graduate',
@@ -112,7 +112,7 @@ const BankingProgram = [
     //     link: ''
     // },
     // {
-    //     title: 'Accelerate [Commercial Banking]',
+    //     title: 'Accelerate',
     //     details: 'A 12 to 18-month program in a fast-paced, client facing area designed to provide opportunities to learn, practice, and apply skills in the Commercial Banking world.',
     //     where: [
     //         'Recent Graduate',
@@ -136,3 +136,13 @@ const BankingProgram = [
 ]
 
 export { BankingProgram }
+
+
+// TOP 6 for Banking
+// 1. Accelerate
+// 2. Commercial Banking
+// 3. International Banking
+// 4. Investment Banking
+// 5. Wealth Management
+// 6. Sales and Trading
+

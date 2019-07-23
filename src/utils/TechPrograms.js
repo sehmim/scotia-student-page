@@ -65,3 +65,12 @@ const TechPrograms = [
 ]
 
 export { TechPrograms }
+
+
+// TOP 6 for Banking
+// 1. Accelerate
+// 2. Commercial Banking
+// 3. International Banking
+// 4. Investment Banking
+// 5. Wealth Management
+// 6. Sales and Trading
