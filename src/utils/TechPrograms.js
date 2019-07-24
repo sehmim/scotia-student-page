@@ -7,7 +7,8 @@ const TechPrograms = [
             'Undergraduate',
             'Graduate'
         ],
-        link: ''
+        link: '',
+        img: require('../assets/tech_img/1.jpg')
     },
     {
         title: 'Associate Product Owner',
@@ -17,7 +18,8 @@ const TechPrograms = [
             'Undergraduate',
             'Graduate'
         ],
-        link: ''
+        link: '',
+        img: require('../assets/tech_img/2.jpg')
     },
     {
         title: 'IgnITion',
@@ -28,7 +30,8 @@ const TechPrograms = [
             'Graduate',
             'MBA'
         ],
-        link: ''
+        link: '',
+        img: require('../assets/tech_img/3.jpg')
     },
     {
         title: 'Data Science',
@@ -39,7 +42,9 @@ const TechPrograms = [
             'Graduate',
             'MBA'
         ],
-        link: ''
+        link: '',
+        img: require('../assets/tech_img/4.jpg')
+
     },
     {
         title: 'Digital Banking',
@@ -50,7 +55,9 @@ const TechPrograms = [
             'Graduate',
             'MBA'
         ],
-        link: ''
+        link: '',
+        img: require('../assets/tech_img/1.jpg')
+
     },
     {
         title: 'Global Banking and Markets',
@@ -60,17 +67,10 @@ const TechPrograms = [
             'Undergraduate',
             'Graduate'
         ],
-        link: ''
+        link: '',
+        img: require('../assets/tech_img/6.jpeg')
+
     },
 ]
 
 export { TechPrograms }
-
-
-// TOP 6 for Banking
-// 1. Accelerate
-// 2. Commercial Banking
-// 3. International Banking
-// 4. Investment Banking
-// 5. Wealth Management
-// 6. Sales and Trading

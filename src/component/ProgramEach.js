@@ -75,7 +75,7 @@ export default function ProgramEach(props) {
         <Card className={classes.card}>
             <CardMedia
                 className={classes.media}
-                image="https://pixel.nymag.com/imgs/daily/vulture/2018/11/27/27-spongebob-squarepants.w700.h700.jpg"
+                image={props.img}
             />
             <CardContent>
                 <Typography className={classes.title} variant="h4" component="p">{props.title}</Typography>

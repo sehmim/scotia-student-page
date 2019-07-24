@@ -15,6 +15,8 @@ import { TechPrograms } from "../utils/TechPrograms";
 import { BankingProgram } from "../utils/BankingProgram";
 
 
+import '../styles/why-scotia.sass'
+
 function TabContainer(props) {
     const { children, dir } = props;
 
@@ -69,8 +71,8 @@ export default function FloatingActionButtonZoom() {
 
     const labelMaker = (title, img) => {
         return (
-            <div style={{ display: 'flex', flexDirection: 'column', }} >
-                <img style={{ width: '90px', height: '80px' }} src={img}></img>
+            <div style={{ alignItems: 'center', display: 'flex', flexDirection: 'column', }} >
+                <img className="appbar-img" src={img}></img>
                 <p>{title}</p>
             </div >
         )
@@ -88,10 +90,10 @@ export default function FloatingActionButtonZoom() {
                     textColor="primary"
                     variant="fullWidth"
                 >
-                    <Tab className={classes.tab} label={labelMaker('Technology', require('../assets/technology.jpg'))} />
-                    <Tab className={classes.tab} label={labelMaker('Banking', require('../assets/banking.jpg'))} />
-                    <Tab className={classes.tab} label={labelMaker('Operations', require('../assets/operations.jpg'))} />
-                    <Tab className={classes.tab} label={labelMaker('Specialties', require('../assets/specialties.jpg'))} />
+                    <Tab className={classes.tab} label={labelMaker('Technology', require('../assets/technology2.png'))} />
+                    <Tab className={classes.tab} label={labelMaker('Banking', require('../assets/banking2.png'))} />
+                    <Tab className={classes.tab} label={labelMaker('Operations', require('../assets/operations.png'))} />
+                    <Tab className={classes.tab} label={labelMaker('Specialties', require('../assets/specialties2.png'))} />
                 </Tabs>
             </AppBar>
             <SwipeableViews
@@ -106,7 +108,7 @@ export default function FloatingActionButtonZoom() {
                         {
                             TechPrograms.map((item, index) => {
                                 return (
-                                    <ProgramEach title={item.title} details={item.details} options={item.where} />
+                                    <ProgramEach img={item.img} title={item.title} details={item.details} options={item.where} />
                                 )
                             })
                         }
@@ -119,7 +121,7 @@ export default function FloatingActionButtonZoom() {
                         {
                             BankingProgram.map((item, index) => {
                                 return (
-                                    <ProgramEach title={item.title} details={item.details} options={item.where} />
+                                    <ProgramEach img={item.img} title={item.title} details={item.details} options={item.where} />
                                 )
                             })
                         }

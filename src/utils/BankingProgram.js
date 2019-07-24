@@ -8,7 +8,8 @@ const BankingProgram = [
             'Graduate',
             'MBA'
         ],
-        link: ''
+        link: '',
+        img: require('../assets/biz_img/1.jpg')
     },
     {
         title: 'Digital Banking',
@@ -19,7 +20,9 @@ const BankingProgram = [
             'Graduate',
             'MBA'
         ],
-        link: ''
+        link: '',
+        img: require('../assets/biz_img/2.jpg')
+
     },
     {
         title: 'International Banking',
@@ -29,7 +32,9 @@ const BankingProgram = [
             'Undergraduate',
             'Graduate',
         ],
-        link: ''
+        link: '',
+        img: require('../assets/biz_img/3.jpg')
+
     },
     {
         title: 'Global Banking & Markets',
@@ -39,7 +44,9 @@ const BankingProgram = [
             'Undergraduate',
             'Graduate',
         ],
-        link: ''
+        link: '',
+        img: require('../assets/biz_img/2.jpg')
+
     },
     {
         title: 'Investment Banking',
@@ -49,7 +56,9 @@ const BankingProgram = [
             'Undergraduate',
             'Graduate'
         ],
-        link: ''
+        link: '',
+        img: require('../assets/biz_img/5.jpg')
+
     },
     {
         title: 'Personal Banking',
@@ -59,7 +68,9 @@ const BankingProgram = [
             'Undergraduate',
             'Graduate'
         ],
-        link: ''
+        link: '',
+        img: require('../assets/biz_img/6.jpg')
+
     },
     // {
     //     title: 'Sales and Trading',
@@ -138,6 +149,7 @@ const BankingProgram = [
 export { BankingProgram }
 
 
+
 // TOP 6 for Banking
 // 1. Accelerate
 // 2. Commercial Banking
@@ -145,4 +157,3 @@ export { BankingProgram }
 // 4. Investment Banking
 // 5. Wealth Management
 // 6. Sales and Trading
-
