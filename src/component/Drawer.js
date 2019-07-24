@@ -31,10 +31,9 @@ const navBarDetailsMain = [
     { text: 'Why Scotia', href: '#why-scotia' },
     { text: 'Catalogue', href: '#catalogue' },
     { text: 'Events', href: '#events' },
-    { text: 'Meet The Team', href: '#meet-the-team' },
 ]
 const navBarDetailsSecondary = [
-    { text: 'FAQ', href: '#faq' },
+    { text: 'Meet The Team', href: '#meet-the-team' },
 ]
 function TemporaryDrawer() {
     const classes = useStyles();

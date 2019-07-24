@@ -67,6 +67,14 @@ export default function FloatingActionButtonZoom() {
         setValue(index);
     }
 
+    const labelMaker = (title, img) => {
+        return (
+            <div style={{ display: 'flex', flexDirection: 'column', }} >
+                <img style={{ width: '90px', height: '80px' }} src={img}></img>
+                <p>{title}</p>
+            </div >
+        )
+    }
 
     return (
         <div className={classes.root}>
@@ -80,10 +88,10 @@ export default function FloatingActionButtonZoom() {
                     textColor="primary"
                     variant="fullWidth"
                 >
-                    <Tab className={classes.tab} label="Technology" />
-                    <Tab className={classes.tab} label="Banking" />
-                    <Tab className={classes.tab} label="Operations" />
-                    <Tab className={classes.tab} label="Specialties" />
+                    <Tab className={classes.tab} label={labelMaker('Technology', require('../assets/technology.jpg'))} />
+                    <Tab className={classes.tab} label={labelMaker('Banking', require('../assets/banking.jpg'))} />
+                    <Tab className={classes.tab} label={labelMaker('Operations', require('../assets/operations.jpg'))} />
+                    <Tab className={classes.tab} label={labelMaker('Specialties', require('../assets/specialties.jpg'))} />
                 </Tabs>
             </AppBar>
             <SwipeableViews

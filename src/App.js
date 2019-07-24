@@ -8,6 +8,7 @@ import MeetTheTeam from './pages/MeetTheTeam';
 import WhyScotiaWordy from './pages/WhyScotiaWordy';
 import CampusEvents from './pages/CampusEvents';
 import Program from './pages/Program';
+import WhyScotiaBenifits from './pages/WhyScotiaBenifits';
 
 export default class App extends Component {
   render() {
@@ -15,8 +16,9 @@ export default class App extends Component {
       <div className="App">
         <SimpleAppBar />
         <LandingPage />
-        {/* <WhyScotiaWordy /> */}
+        <WhyScotiaWordy />
         <WhyScotia />
+        <WhyScotiaBenifits />
         <Program />
         <CampusEvents />
         <MeetTheTeam />

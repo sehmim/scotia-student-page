@@ -5,6 +5,7 @@ import '../styles/why-scotia.sass'
 import { Box } from '@material-ui/core';
 
 import MyCard from "../component/MyCard";
+import WhyScotiaBenifits from './WhyScotiaBenifits';
 
 
 const cardValues = [
