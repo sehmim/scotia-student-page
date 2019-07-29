@@ -7,7 +7,7 @@ const TechPrograms = [
             'Undergraduate',
             'Graduate'
         ],
-        link: '',
+        link: 'https://www.scotiabank.com/careers/en/careers/careers-students-and-new-grads/velocity-technology-development-program-for-interns-and-co-ops.html',
         img: require('../assets/tech_img/1.jpg')
     },
     {
@@ -18,7 +18,7 @@ const TechPrograms = [
             'Undergraduate',
             'Graduate'
         ],
-        link: '',
+        link: 'https://digitalfactory.scotiabank.com/careers/apo_program',
         img: require('../assets/tech_img/2.jpg')
     },
     {
@@ -30,7 +30,7 @@ const TechPrograms = [
             'Graduate',
             'MBA'
         ],
-        link: '',
+        link: 'https://www.scotiabank.com/careers/en/careers/careers-students-and-new-grads/ignition-technology-solutions-development-program.html',
         img: require('../assets/tech_img/3.jpg')
     },
     {
@@ -42,7 +42,7 @@ const TechPrograms = [
             'Graduate',
             'MBA'
         ],
-        link: '',
+        link: 'https://www.scotiabank.com/careers/en/careers/careers-students-and-new-grads/data-science-for-interns-and-co-ops.html',
         img: require('../assets/tech_img/4.jpg')
 
     },
@@ -55,7 +55,7 @@ const TechPrograms = [
             'Graduate',
             'MBA'
         ],
-        link: '',
+        link: 'https://www.scotiabank.com/careers/en/careers/careers-students-and-new-grads/digital-banking-internships-and-co-op-placements.html',
         img: require('../assets/tech_img/1.jpg')
 
     },
@@ -67,7 +67,7 @@ const TechPrograms = [
             'Undergraduate',
             'Graduate'
         ],
-        link: '',
+        link: 'https://www.scotiabank.com/careers/en/careers/careers-students-and-new-grads/global-operations-for-interns-and-co-ops.html',
         img: require('../assets/tech_img/6.jpeg')
 
     },

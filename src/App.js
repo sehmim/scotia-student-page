@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import SimpleAppBar from './component/Navbar';
-import LandingPage from './pages/LandingPage';
+import LandingPage2 from './pages/LandingPage2';
 import SecondPage from './pages/SecondPage';
 import WhyScotia from './pages/WhyScotia';
 import MeetTheTeam from './pages/MeetTheTeam';
@@ -14,8 +14,8 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
+        <LandingPage2 />
         <SimpleAppBar />
-        <LandingPage />
         <WhyScotiaWordy />
         <WhyScotia />
         <WhyScotiaBenifits />

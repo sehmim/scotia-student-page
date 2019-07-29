@@ -24,7 +24,7 @@ import BottomNavigation from '@material-ui/core/BottomNavigation';
 const useStyles = makeStyles(theme => ({
     card: {
         margin: '25px 0px 25px 0px',
-        minWidth: 355,
+        minWidth: 270,
         maxWidth: 355
     },
     media: {
@@ -44,9 +44,7 @@ const useStyles = makeStyles(theme => ({
     avatar: {
         backgroundColor: red[500],
     },
-    poop: {
-        backgroundColor: 'red'
-    },
+
     btn: {
         border: '1px solid grey',
         fontSize: '10px',
@@ -86,7 +84,7 @@ export default function ProgramEach(props) {
                         })
                     }
                 </Box>
-                <Typography style={{ height: '170px' }} >
+                <Typography style={{ paddingTop: '10px', fontSize: '15px', height: '180px' }} >
                     {props.details}
                 </Typography>
                 <BottomNavigation>

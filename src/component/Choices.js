@@ -13,7 +13,8 @@ import { Box } from '@material-ui/core';
 
 import { TechPrograms } from "../utils/TechPrograms";
 import { BankingProgram } from "../utils/BankingProgram";
-
+import { OperationsProgram } from "../utils/OperationProgram";
+import { OtherPrograms } from "../utils/OtherPrograms";
 
 import '../styles/why-scotia.sass'
 
@@ -108,7 +109,7 @@ export default function FloatingActionButtonZoom() {
                         {
                             TechPrograms.map((item, index) => {
                                 return (
-                                    <ProgramEach img={item.img} title={item.title} details={item.details} options={item.where} />
+                                    <ProgramEach link={item.link} img={item.img} title={item.title} details={item.details} options={item.where} />
                                 )
                             })
                         }
@@ -121,28 +122,36 @@ export default function FloatingActionButtonZoom() {
                         {
                             BankingProgram.map((item, index) => {
                                 return (
-                                    <ProgramEach img={item.img} title={item.title} details={item.details} options={item.where} />
+                                    <ProgramEach link={item.link} img={item.img} title={item.title} details={item.details} options={item.where} />
                                 )
                             })
                         }
                     </Box>
                 </TabContainer>
                 {/* -------- Global Banking ------- */}
-                {/* <TabContainer dir={theme.direction}>
+                <TabContainer dir={theme.direction}>
                     <Box display="flex" justifyContent="space-around" flexWrap="wrap"  >
-                        <ProgramEach title='Banking Stuff' />
-                        <ProgramEach title='Tech Stuff' />
-                        <ProgramEach title='Marketing Stuff' />
+                        {
+                            OperationsProgram.map((item, index) => {
+                                return (
+                                    <ProgramEach link={item.link} img={item.img} title={item.title} details={item.details} options={item.where} />
+                                )
+                            })
+                        }
                     </Box>
-                </TabContainer> */}
+                </TabContainer>
                 {/* -------- Others ------- */}
-                {/* <TabContainer dir={theme.direction}>
+                <TabContainer dir={theme.direction}>
                     <Box display="flex" justifyContent="space-around" flexWrap="wrap"  >
-                        <ProgramEach title='Banking Stuff' />
-                        <ProgramEach title='Tech Stuff' />
-                        <ProgramEach title='Marketing Stuff' />
+                        {
+                            OtherPrograms.map((item, index) => {
+                                return (
+                                    <ProgramEach link={item.link} img={item.img} title={item.title} details={item.details} options={item.where} />
+                                )
+                            })
+                        }
                     </Box>
-                </TabContainer> */}
+                </TabContainer>
             </SwipeableViews>
         </div >
     );

@@ -4,7 +4,7 @@ import "../styles/landing-page.sass";
 
 
 
-const BG_IMG_URL = '../assets/bg-gif.gif'
+const BG_IMG_URL = 'https://img.youtube.com/vi/l171rOOGB9M/maxresdefault.jpg'
 export default class LandingPage extends Component {
     render() {
         return (
