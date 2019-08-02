@@ -61,21 +61,9 @@ const BankingProgram = [
         img: require('../assets/biz_img/5.jpg')
 
     },
-    {
-        title: 'Global Banking & Markets',
-        details: 'A data-intensive area that supports Investment Banking, Sales and Trading, Equity Research, and Corporate Banking through transactions, and inserts a foot in the door for front-office positions, Global Wholesale Operations, and Global Business Payments.',
-        where: [
-            'Co-op/Internship',
-            'Undergraduate',
-            'Graduate',
-        ],
-        link: '',
-        img: require('../assets/biz_img/2.jpg')
-
-    },
     // {
-    //     title: 'Wealth Management',
-    //     details: 'A competitive area in the largest business line by revenue that builds on core financial planning and complementary client discovery skills with ongoing coaching and support.',
+    //     title: 'Global Banking & Markets',
+    //     details: 'A data-intensive area that supports Investment Banking, Sales and Trading, Equity Research, and Corporate Banking through transactions, and inserts a foot in the door for front-office positions, Global Wholesale Operations, and Global Business Payments.',
     //     where: [
     //         'Co-op/Internship',
     //         'Undergraduate',
@@ -86,6 +74,18 @@ const BankingProgram = [
 
     // },
     {
+        title: 'Wealth Management',
+        details: 'A competitive area in the largest business line by revenue that builds on core financial planning and complementary client discovery skills with ongoing coaching and support.',
+        where: [
+            'Co-op/Internship',
+            'Undergraduate',
+            'Graduate',
+        ],
+        link: 'https://www.scotiabank.com/careers/en/careers/careers-students-and-new-grads/canadian-banking-wealth-management-summer-internship.html',
+        img: require('../assets/biz_img/2.jpg')
+
+    },
+    {
         title: 'Sales and Trading',
         details: 'A challenging area in the Global Banking and Markets that provides practical knowledge and experience in Credit Derivatives and Emerging Markets, Equity Derivatives, Equity Sales and Trading, Financial Services, Fixed Income, and Risk Solutions.',
         where: [
@@ -93,7 +93,7 @@ const BankingProgram = [
             'Undergraduate',
             'Graduate'
         ],
-        link: '',
+        link: 'https://www.scotiabank.com/careers/en/careers/careers-students-and-new-grads/sales-trading-internship-canada.html',
         img: require('../assets/biz_img/4.jpg')
 
     }

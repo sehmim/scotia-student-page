@@ -8,7 +8,7 @@ const OperationsProgram = [
             'Graduate',
             'MBA'
         ],
-        link: '',
+        link: 'https://www.scotiabank.com/careers/en/careers/careers-students-and-new-grads/enterprise-functions-and-strategy-for-interns-and-co-ops.html',
         img: require('../assets/biz_img/1.jpg')
 
     },

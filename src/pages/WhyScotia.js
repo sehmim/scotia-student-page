@@ -11,7 +11,7 @@ import WhyScotiaBenifits from './WhyScotiaBenifits';
 const cardValues = [
     { title: 'Respect', img: require('../assets/icon/Respect.png'), details: 'Everyone is always treated with dignity; diverse backgrounds and experiences are what make us better as a whole.' },
     { title: 'Integrity', img: require('../assets/icon/Integrity.png'), details: 'Acting honorably comes first – earning the trust of our customers (and each other) is what matters most.' },
-    { title: 'Passion', img: require('../assets/icon/Passion.png'), details: 'We’re enthusiastic about what we do, and want you to feel the same way. Imagine coming in to work, and actually feeling excited to learn!' },
+    { title: 'Passion', img: require('../assets/icon/Passion.png'), details: "We're passionate about what we do, and we'll make sure you are too!" },
     { title: 'Accountability', img: require('../assets/icon/Accountability.png'), details: 'We commit, we take action, and most importantly, we take responsibility for those actions. It’s just the right thing to do.' },
 ]
 

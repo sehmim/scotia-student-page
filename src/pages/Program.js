@@ -18,7 +18,7 @@ export default class Program extends Component {
                     <Choices />
                 </Box>
                 <Box p={0.0} m={0.0} display="flex" justifyContent="flex-end">
-                    <Button variant="outlined" href="#outlined-buttons"> See More...</Button>
+                    <Button variant="outlined" href="https://www.scotiabank.com/careers/en/careers/careers-students-and-new-grads.html"> See More...</Button>
                 </Box>
             </div>
         )

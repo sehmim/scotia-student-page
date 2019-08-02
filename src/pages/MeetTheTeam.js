@@ -153,7 +153,7 @@ export default class MeetTheTeam extends Component {
                                     <img className="avatar-2" src={item.img} />
                                     <Typography my={10.0} variant="h5" component="h4"> {item.name} </Typography>
                                     <Typography variant="subtitle2" component="p"> {item.title} </Typography>
-                                    <a src={item.linkedIn}>
+                                    <a href={item.linkedIn}>
                                         <img className="avatar-linkedin" src={social_icons.linkedIn} />
                                     </a>
                                 </Box>

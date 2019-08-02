@@ -38,7 +38,8 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.background.paper,
         width: '100%',
         position: 'relative',
-        minHeight: 200,
+        height: '100%'
+
     },
     fab: {
         position: 'absolute',
@@ -54,6 +55,9 @@ const useStyles = makeStyles(theme => ({
     },
     tab: {
         fontSize: '10px',
+    },
+    tabContainer: {
+        minHeight: '400px'
     }
 }));
 
@@ -104,7 +108,7 @@ export default function FloatingActionButtonZoom() {
             >
 
                 {/* -------- TECHNOLOGY ------- */}
-                <TabContainer dir={theme.direction}>
+                <TabContainer className={classes.tabContainer} dir={theme.direction}>
                     <Box display="flex" justifyContent="space-around" flexWrap="wrap"  >
                         {
                             TechPrograms.map((item, index) => {
@@ -117,7 +121,7 @@ export default function FloatingActionButtonZoom() {
                 </TabContainer>
 
                 {/* -------- Global Marketing ------- */}
-                <TabContainer dir={theme.direction}>
+                <TabContainer className={classes.tabContainer} dir={theme.direction}>
                     <Box display="flex" justifyContent="space-around" flexWrap="wrap"  >
                         {
                             BankingProgram.map((item, index) => {
@@ -129,7 +133,7 @@ export default function FloatingActionButtonZoom() {
                     </Box>
                 </TabContainer>
                 {/* -------- Global Banking ------- */}
-                <TabContainer dir={theme.direction}>
+                <TabContainer className={classes.tabContainer} dir={theme.direction}>
                     <Box display="flex" justifyContent="space-around" flexWrap="wrap"  >
                         {
                             OperationsProgram.map((item, index) => {
@@ -141,7 +145,7 @@ export default function FloatingActionButtonZoom() {
                     </Box>
                 </TabContainer>
                 {/* -------- Others ------- */}
-                <TabContainer dir={theme.direction}>
+                <TabContainer className={classes.tabContainer} dir={theme.direction}>
                     <Box display="flex" justifyContent="space-around" flexWrap="wrap"  >
                         {
                             OtherPrograms.map((item, index) => {

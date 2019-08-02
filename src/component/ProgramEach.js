@@ -48,16 +48,21 @@ const useStyles = makeStyles(theme => ({
     btn: {
         border: '1px solid grey',
         fontSize: '10px',
-        margin: '5px'
+        margin: '5px',
+        cursor: 'default'
     },
     btn2: {
         position: 'relative',
         bottom: '0px'
     },
     title: {
-        height: '40px',
+        minHeight: '40px',
+        maxHeight: '80px',
         margin: '0px 0px 10px 0px',
         fontSize: '25px'
+    },
+    btnGrp: {
+        minHeight: '100px'
     }
 }));
 
@@ -75,16 +80,16 @@ export default function ProgramEach(props) {
                 className={classes.media}
                 image={props.img}
             />
-            <CardContent>
+            <CardContent className={classes.cardContent}>
                 <Typography className={classes.title} variant="h4" component="p">{props.title}</Typography>
-                <Box>
+                <Box className={classes.btnGrp}>
                     {
                         props.options.map((item, index) => {
                             return (<Button className={classes.btn}> {item} </Button>)
                         })
                     }
                 </Box>
-                <Typography style={{ paddingTop: '10px', fontSize: '15px', height: '180px' }} >
+                <Typography style={{ paddingTop: '10px', fontSize: '15px', minHeight: '180px', maxHeight: '200px' }} >
                     {props.details}
                 </Typography>
                 <BottomNavigation>
@@ -93,6 +98,6 @@ export default function ProgramEach(props) {
                         className={classes.btn2} fullWidth > Learn More </Button>
                 </BottomNavigation>
             </CardContent>
-        </Card>
+        </Card >
     );
 }
