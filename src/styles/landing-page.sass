@@ -1,24 +1,41 @@
 @import 'mixings.sass'
 
-.landing-page
-    display: flex
-    justify-content: center
-    height: 100vh
-    background-size: 100%
-    // background-origin: content-box
-    background-repeat: no-repeat
-    background-position: center
-    background-image: url('https://img.youtube.com/vi/l171rOOGB9M/maxresdefault.jpg')
-    position: relative
-
-.landing-page-img
-    height: 100vh
-
-    // position: relative
-    // background: rgba(255, 4, 1, 0.8)
-
 .nav-img
     transition: all .2s ease
     cursor: pointer
     &:hover
         @include hovering-nav-2
+
+
+.landing-page
+    margin-top: 100px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-items: center
+
+.landing-page-img-bg
+    width: 50vw
+
+.title-body
+    width: 48vw
+
+.title-body-title
+    font-size: 80px
+    padding: 10px
+    font-weight: 400
+
+@media (max-width: 400px)
+    .appbar-img
+        width: 20px
+        height: 20px
+
+@media (min-width: 320px) and (max-width: 959px)
+    .landing-page-img-bg
+        width: 99vw
+    .title-body-title
+        font-size: 80px
+        font-weight: 400
+        width: 92vw
+    .para-body
+        padding-left: 0px

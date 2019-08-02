@@ -10,20 +10,19 @@ const IMG = "https://www.scotiabank.com/content/dam/scotiabank/corporate/Images/
 export default class WhyScotiaWordy extends Component {
     render() {
         return (
-            <div style={{ position: 'relative', bottom: '20px' }
-            } >
+            <div >
                 <div id="why-scotia2" className="why-scotia2">
                     <div className="img-body">
                         <img className="img-bg" src={IMG}></img>
                     </div>
 
-                    <Box className="para-body" m={3} alignLeft>
-                        <Typography style={{ fontWeight: '400', padding: '20px', color: "white", fontSize: '300%' }} align="left" variant="h1" component="h1"> What we do </Typography>
+                    <Box className="para-body" alignLeft>
+                        <Typography style={{ fontWeight: '400', padding: '20px 20px 20px 0px', color: "white", fontSize: '300%' }} align="left" variant="h1" component="h1"> What we do </Typography>
                         <Box mb={3.0}>
-                            <Typography style={{ paddingLeft: '20px', fontSize: '110%', color: "white" }} align="left" variant="subtitle1" component="h5"> {DETAIL_PARA} </Typography>
-                        </Box>
+                            <Typography style={{fontSize: '110%', color: "white" }} align="left" variant="subtitle1" component="h5"> {DETAIL_PARA} </Typography>
                     </Box>
-                </div >
+                    </Box>
+            </div >
             </div >
         )
     }
