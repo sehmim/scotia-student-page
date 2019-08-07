@@ -11,18 +11,40 @@ import Program from './pages/Program';
 import WhyScotiaBenifits from './pages/WhyScotiaBenifits';
 
 export default class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      isLoading: true
+    };
+  };
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        isLoading: false
+      })
+    }, 7000)
+  }
   render() {
     return (
-      <div className="App">
-        <LandingPage />
-        <SimpleAppBar />
-        <WhyScotiaWordy />
-        <WhyScotia />
-        <WhyScotiaBenifits />
-        <Program />
-        <CampusEvents />
-        <MeetTheTeam />
-      </div>
+      this.state.isLoading ?
+        <div className="App2" >
+        </div>
+        : <div>
+          <div className="App">
+            <LandingPage />
+            <SimpleAppBar />
+            <WhyScotiaWordy />
+            <WhyScotia />
+            <WhyScotiaBenifits />
+            <Program />
+            <CampusEvents />
+            <MeetTheTeam />
+          </div>
+        </div>
     )
   }
 }
+
+

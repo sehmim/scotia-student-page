@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 export default class WhyScotiaBenifits extends Component {
 
     render() {
-        const IMG = "https://www.scotiabank.com/content/dam/scotiabank/corporate/Images/ScotiaPlaza_dusk.jpg"
+        const IMG = require('../assets/bg-2.jpg')
 
         return (
             <div id="why-scotia2" className="why-scotia2">

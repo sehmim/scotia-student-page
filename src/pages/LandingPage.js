@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 
 
 const BG_IMG_URL = require('../assets/back-svg.png')
+
 export default class LandingPage extends Component {
     render() {
         return (

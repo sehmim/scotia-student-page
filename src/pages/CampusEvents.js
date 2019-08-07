@@ -5,9 +5,11 @@ import { Box } from '@material-ui/core';
 
 import '../styles/campus-events.sass'
 import MyCalender from '../component/MyCalender';
+import ControlledExpansionPanels from '../component/ControlledExpantionPedal';
 
 export default class CampusEvents extends Component {
     render() {
+
         return (
             <div id="events" className="campus-events">
                 <hr></hr>
@@ -15,7 +17,7 @@ export default class CampusEvents extends Component {
                     <Typography align="center" variant="h2" component="h1"> Campus Events </Typography>
                 </Box>
                 <hr></hr>
-                <MyCalender />
+                <ControlledExpansionPanels />
             </div>
         )
     }

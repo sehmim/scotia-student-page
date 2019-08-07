@@ -6,13 +6,7 @@ import Typography from '@material-ui/core/Typography';
 
 
 export default class MyCard extends Component {
-    constructor(props) {
-        super(props)
 
-        this.state = {
-
-        };
-    };
     render() {
         return (
             <div className="cardMain">
