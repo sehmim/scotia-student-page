@@ -14,6 +14,8 @@ The Purpose of this website is to advertise Scotiabanks new career opportunities
 ## Demo
 [scotia-dev.com](http://scotia-capstone.surge.sh/)
 
+![](https://media.giphy.com/media/IzidFm1auMesaEao52/giphy.gif)
+
 
 
 ## Contributions
