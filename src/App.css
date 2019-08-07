@@ -3,10 +3,33 @@
 }
 
 .App2 {
-  background-image: url('../src/assets/starter.gif');
-  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
   height: 100vh;
-  background-repeat: no-repeat
 }
 
+.App-img{
+  width: 70vw;
+  height: 90vh;
+}
 /* @media () */
+
+
+@media (min-width: 320px) and (max-width: 560px) {
+  .App-img {
+    margin-top: 210px;
+    margin-bottom: 210px;
+    width: 100vw;
+    height: 40vh;
+
+  }
+}
+
+@media (max-width: 1060px) {
+  .App-img {
+    height: 60vh;
+
+  }
+}

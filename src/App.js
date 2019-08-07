@@ -15,7 +15,7 @@ export default class App extends Component {
     super(props)
 
     this.state = {
-      isLoading: false
+      isLoading: true
     };
   };
 
@@ -30,6 +30,7 @@ export default class App extends Component {
     return (
       this.state.isLoading ?
         <div className="App2" >
+          <img src={require('../src/assets/starter.gif')} className="App-img"></img>
         </div>
         : <div>
           <div className="App">
