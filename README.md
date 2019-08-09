@@ -19,7 +19,7 @@ The Purpose of this website is to advertise Scotiabanks new career opportunities
 
 
 ## Contributions
-1. [Hermes Hui](https://www.linkedin.com/in/hermes-hui-a60545145) : Team Lead
+1. [Hermes Hui](https://www.linkedin.com/in/hermes-hui-a60545145) : Team Lead/ Project Manager
 2. [Bren Shathakumar](https://www.linkedin.com/in/bren-shanthakumar-045591149/) : UX Designer
 3. [Sehmim Haque (Me)](https://www.linkedin.com/in/sehmim-haque/) : Developer
 
