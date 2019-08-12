@@ -33,6 +33,10 @@ This is an open source project. Though the contents of this projects are mainly 
 `npm start`
 #### Build
 `npm run build`
+##### Using Docker
+`sh dockerBuild.sh`
+`sh dockerRun.sh`
+
 compines everything into simple JS, HTML and CSS in build file
 #### Deploy
 `cd build`
