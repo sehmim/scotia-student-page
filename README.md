@@ -25,3 +25,16 @@ The Purpose of this website is to advertise Scotiabanks new career opportunities
 
 #### Disclaimer 
 This is an open source project. Though the contents of this projects are mainly related to Scotiabank, The bank or any of its organization do not hold any responsibilities for its project. 
+
+### Usage
+
+`git clone REPO`
+`npm install`
+`npm start`
+#### Build
+`npm run build`
+compines everything into simple JS, HTML and CSS in build file
+#### Deploy
+`cd build`
+`surge`
+You cant deploy without my account and passs ( muahahahahah!! )
