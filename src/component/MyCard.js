@@ -4,6 +4,13 @@ import '../styles/card.sass'
 import { Box } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 
+const HEADER = {
+    fontFamily: "Scotia_W_Bd",
+}
+
+const PARAGRAPH = {
+    fontFamily: "Scotia_W_Rg"
+}
 
 export default class MyCard extends Component {
 
@@ -14,11 +21,11 @@ export default class MyCard extends Component {
                     <div className="card_side card_side--front" href="#">
                         <img className="card-img" src={this.props.detailEach.img}></img>
                         <Box>
-                            <Typography className="header-item" variant="subtitle1" component="p"> {this.props.detailEach.title} </Typography>
+                            <Typography style={HEADER} className="header-item" variant="subtitle1" component="p"> {this.props.detailEach.title} </Typography>
                         </Box>
                     </div>
                     <div className="card_side card_side--back">
-                        <p className="body-item"> {this.props.detailEach.details} </p>
+                        <p style={PARAGRAPH} className="body-item"> {this.props.detailEach.details} </p>
                     </div>
                 </div>
             </div>

@@ -14,36 +14,20 @@ export default class App extends Component {
   constructor(props) {
     super(props)
 
-    this.state = {
-      isLoading: true
-    };
   };
 
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({
-        isLoading: false
-      })
-    }, 7000)
-  }
   render() {
     return (
-      this.state.isLoading ?
-        <div className="App2" >
-          <img src={require('../src/assets/starter.gif')} className="App-img"></img>
-        </div>
-        : <div>
-          <div className="App">
-            <LandingPage />
-            <SimpleAppBar />
-            <WhyScotiaWordy />
-            <WhyScotia />
-            <WhyScotiaBenifits />
-            <Program />
-            <CampusEvents />
-            <MeetTheTeam />
-          </div>
-        </div>
+      <div className="App">
+        <LandingPage />
+        <SimpleAppBar />
+        <WhyScotiaWordy />
+        <WhyScotia />
+        <WhyScotiaBenifits />
+        <Program />
+        <CampusEvents />
+        <MeetTheTeam />
+      </div>
     )
   }
 }

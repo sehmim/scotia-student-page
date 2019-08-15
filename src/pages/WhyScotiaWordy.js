@@ -9,6 +9,21 @@ const DETAIL_PARA = "Scotiabank has built a strong legacy of trust and commitmen
 // const IMG = "https://www.scotiabank.com/content/dam/scotiabank/corporate/Images/DigitalFactory1.jpg"
 const IMG = require('../assets/temp-bg.jpg')
 
+const SUB_HEADER = {
+    fontFamily: 'Scotia_W_Bd',
+    fontWeight: '400',
+    padding: '20px 20px 20px 0px',
+    color: "white",
+    fontSize: '300%'
+}
+
+const PARAGRAPHS = {
+    fontSize: '110%',
+    color: "white",
+    fontFamily: "Scotia_W_Rg"
+
+}
+
 export default class WhyScotiaWordy extends Component {
     render() {
         return (
@@ -19,9 +34,9 @@ export default class WhyScotiaWordy extends Component {
                     </div>
 
                     <Box className="para-body" alignLeft>
-                        <Typography style={{ fontWeight: '400', padding: '20px 20px 20px 0px', color: "white", fontSize: '300%' }} align="left" variant="h1" component="h1"> What we do </Typography>
+                        <Typography style={SUB_HEADER} align="left" variant="h1" component="h1"> What we do </Typography>
                         <Box mb={3.0}>
-                            <Typography style={{ fontSize: '110%', color: "white" }} align="left" variant="subtitle1" component="h5"> {DETAIL_PARA} </Typography>
+                            <Typography style={PARAGRAPHS} align="left" variant="subtitle1" component="h5"> {DETAIL_PARA} </Typography>
                         </Box>
                     </Box>
                 </div >

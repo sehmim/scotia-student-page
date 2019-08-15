@@ -83,6 +83,14 @@ const RECRUTERS = [
     }
 ]
 
+
+const FONT_HEADER = require('../assets/font/Scotia_W_Bd.woff')
+
+
+// const FONT_HEADER = {
+
+// }
+
 export default class MeetTheTeam extends Component {
     render() {
         return (
@@ -90,19 +98,19 @@ export default class MeetTheTeam extends Component {
             <div id="meet-the-team" className="meet-the-team">
                 {console.log('public url: ', process.env.PUBLIC_URL)}
                 <Box alignLeft my={3.0}>
-                    <Typography align="center" variant="h2" component="h1"> Meet The Team </Typography>
+                    <Typography
+                        align="center" style={{ fontFamily: FONT_HEADER }}> Meet The Team </Typography>
                 </Box>
 
                 {/* MICHEAL SHELSEN */}
                 <hr></hr>
                 <Box>
-                    <Typography align="center" variant="h4" component="h2"> The Director </Typography>
+                    <Typography style={{ fontFamily: FONT_HEADER }} align="center" > The Director </Typography>
                 </Box>
                 <hr></hr>
                 <Grid align="center" >
                     {/* <Avatar size="big" alt="MICHEAL SHELSEN" src="" /> */}
                     <Box mb={3.0} >
-                        {console.log('POOOP', DIRECTOR.img)}
                         <img className="avatar" src={DIRECTOR.img} />
                         <Typography minH my={10.0} variant="h4" component="h2"> {DIRECTOR.name} </Typography>
                         <Typography variant="subtitle1" component="p"> {DIRECTOR.title} </Typography>

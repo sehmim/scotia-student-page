@@ -6,6 +6,7 @@ import { Box } from '@material-ui/core';
 
 import MyCard from "../component/MyCard";
 import WhyScotiaBenifits from './WhyScotiaBenifits';
+import { fontSize } from '@material-ui/system';
 
 
 const cardValues = [
@@ -21,20 +22,33 @@ const card2Values = [
     { title: 'Your Path', img: require('../assets/icon/Invest.png'), details: 'We’ll work hard alongside you to help you reach your full professional (and personal) potential.' },
     { title: 'Acceptance', img: require('../assets/icon/Accepted.png'), details: 'Our team is incredibly diverse, and we won’t just welcome you as you are, we’ll celebrate you as you are.' },
 ]
+
+const HEADER = {
+    fontFamily: "Scotia_W_Headline",
+    fontSize: '50px'
+}
+const HEADER2 = {
+    fontFamily: "Scotia_W_Bd"
+}
+
+const SUB_HEADER = {
+    fontFamily: "Scotia_W_Rg"
+}
+
 export default class WhyScotia extends Component {
     render() {
         return (
             <div id="why-scotia" className="why-scotia">
                 <hr></hr>
                 <Box alignCenter mt={3.0}>
-                    <Typography align="center" variant="h2" component="h1"> Why Scotiabank </Typography>
+                    <Typography style={HEADER} align="center" variant="h2" component="h1"> Why Scotiabank </Typography>
                 </Box>
                 <Box mb={3.0}>
-                    <Typography align="center" variant="subtitle1" component="h5"> Because your career is a journey - choose the path that allows you to thrive. </Typography>
+                    <Typography style={SUB_HEADER} align="center" variant="subtitle1" component="h5"> Because your career is a journey - choose the path that allows you to thrive. </Typography>
                 </Box>
                 <hr></hr>
                 <Box my={3.0}>
-                    <Typography align="center" variant="h4" component="h5"> Our Values </Typography>
+                    <Typography style={HEADER2} align="center" variant="h4" component="h5"> Our Values </Typography>
                 </Box>
                 <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-around" >
                     {
@@ -47,7 +61,7 @@ export default class WhyScotia extends Component {
                 </Box>
 
                 <Box my={3.0}>
-                    <Typography align="center" variant="h4" component="h2"> Do Your Future Self a favor </Typography>
+                    <Typography style={HEADER} align="center" variant="h4" component="h2"> Do Your Future Self a favor </Typography>
                 </Box>
 
                 <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-around" >
