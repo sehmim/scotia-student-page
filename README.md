@@ -7,7 +7,7 @@ The Purpose of this website is to advertise Scotiabanks new career opportunities
 
 #### Tech Stack
 
-1. React
+1. React ![Image](https://rawgit.com/gorangajic/react-icons/master/react-icons.svg)
 2. Sass
 3. Docker
 
