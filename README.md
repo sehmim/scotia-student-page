@@ -10,6 +10,7 @@ The Purpose of this website is to advertise Scotiabanks new career opportunities
 1. React
 2. Sass
 3. Docker
+4. Circle CI
 
 ## Demo
 [scotia-dev.com](http://scotia-capstone.surge.sh/)
