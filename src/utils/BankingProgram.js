@@ -24,18 +24,6 @@ const BankingProgram = [
         link: 'https://www.scotiabank.com/careers/en/careers/careers-students-and-new-grads/commercial-banking-for-interns-and-co-ops.html',
         img: require('../assets/biz_img/1.jpg')
     },
-    // {
-    //     title: 'International Banking',
-    //     details: 'A challenging area that supports international operations in Global Wealth or Global Insurance across Canada, Latin America, the Caribbean, Central America, and the Asia Pacific with the full range of financial products and services.',
-    //     where: [
-    //         'Co-op/Internship',
-    //         'Undergraduate',
-    //         'Graduate',
-    //     ],
-    //     link: '',
-    //     img: require('../assets/biz_img/3.jpg')
-
-    // },
     {
         title: 'Digital Banking',
         details: 'A specific area that fosters Innovation, Product Engineering, Agile, Customer Experience (CX), Decision Sciences, and Digital Banking Operations and Administration talent and work at the Digital Factory.',
