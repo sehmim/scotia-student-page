@@ -86,10 +86,16 @@ const RECRUTERS = [
 
 const FONT_HEADER = require('../assets/font/Scotia_W_Bd.woff')
 
+const HEADER = {
+    fontFamily: "Scotia_W_Headline",
+}
+const HEADER2 = {
+    fontFamily: "Scotia_W_Bd"
+}
 
-// const FONT_HEADER = {
-
-// }
+const SUB_HEADER = {
+    fontFamily: "Scotia_W_Rg"
+}
 
 export default class MeetTheTeam extends Component {
     render() {
@@ -98,22 +104,22 @@ export default class MeetTheTeam extends Component {
             <div id="meet-the-team" className="meet-the-team">
                 {console.log('public url: ', process.env.PUBLIC_URL)}
                 <Box alignLeft my={3.0}>
-                    <Typography
-                        align="center" style={{ fontFamily: FONT_HEADER }}> Meet The Team </Typography>
+                    <Typography variant="h4" component="h2"
+                        align="center" style={HEADER} > Meet The Team </Typography>
                 </Box>
 
                 {/* MICHEAL SHELSEN */}
                 <hr></hr>
                 <Box>
-                    <Typography style={{ fontFamily: FONT_HEADER }} align="center" > The Director </Typography>
+                    <Typography style={HEADER2} align="center" > The Director </Typography>
                 </Box>
                 <hr></hr>
                 <Grid align="center" >
                     {/* <Avatar size="big" alt="MICHEAL SHELSEN" src="" /> */}
                     <Box mb={3.0} >
                         <img className="avatar" src={DIRECTOR.img} />
-                        <Typography minH my={10.0} variant="h4" component="h2"> {DIRECTOR.name} </Typography>
-                        <Typography variant="subtitle1" component="p"> {DIRECTOR.title} </Typography>
+                        <Typography style={SUB_HEADER} minH my={10.0} variant="h4" component="h1"> {DIRECTOR.name} </Typography>
+                        <Typography style={SUB_HEADER} variant="subtitle2" component="p"> {DIRECTOR.title} </Typography>
                         <a href='https://www.linkedin.com/in/michaelshelsen'>
                             <img className="avatar-linkedin" src={social_icons.linkedIn} />
                         </a>
@@ -123,7 +129,7 @@ export default class MeetTheTeam extends Component {
 
                 <hr></hr>
                 <Box>
-                    <Typography align="center" variant="h4" component="h2"> The Program Managers </Typography>
+                    <Typography style={HEADER2} align="center" variant="h4" component="h2"> The Program Managers </Typography>
                 </Box>
                 <hr></hr>
 
@@ -133,8 +139,8 @@ export default class MeetTheTeam extends Component {
                             return (
                                 <Box className="avatar-box" key={index} >
                                     <img className="avatar-2" src={item.img} />
-                                    <Typography my={10.0} variant="h5" component="h4"> {item.name} </Typography>
-                                    <Typography variant="subtitle2" component="p"> {item.title} </Typography>
+                                    <Typography style={SUB_HEADER} my={10.0} variant="h5" component="h4"> {item.name} </Typography>
+                                    <Typography style={SUB_HEADER} variant="subtitle2" component="p"> {item.title} </Typography>
                                     <a href={item.linkedIn}>
                                         <img className="avatar-linkedin" src={social_icons.linkedIn} />
                                     </a>
@@ -159,8 +165,8 @@ export default class MeetTheTeam extends Component {
                             return (
                                 <Box className="avatar-box" key={index} >
                                     <img className="avatar-2" src={item.img} />
-                                    <Typography my={10.0} variant="h5" component="h4"> {item.name} </Typography>
-                                    <Typography variant="subtitle2" component="p"> {item.title} </Typography>
+                                    <Typography style={SUB_HEADER} my={10.0} variant="h5" component="h4"> {item.name} </Typography>
+                                    <Typography style={SUB_HEADER} variant="subtitle2" component="p" variant="subtitle2" component="p"> {item.title} </Typography>
                                     <a href={item.linkedIn}>
                                         <img className="avatar-linkedin" src={social_icons.linkedIn} />
                                     </a>

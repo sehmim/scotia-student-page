@@ -4,6 +4,8 @@ import '../styles/why-scotia.sass'
 import { Box } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 
+// Utils
+import { WhyScotiaBenifitsPara1, WhyScotiaBenifitsPara2, WhyScotiaBenifitsPara3 } from "../utils/FirstThreePagesText";
 
 const HEADER = {
     fontFamily: "Scotia_W_Headline",
@@ -13,15 +15,13 @@ const HEADER = {
     color: "white",
     fontSize: '200%'
 }
-const HEADER2 = {
-    fontFamily: "Scotia_W_Bd"
-}
 
 const SUB_HEADER = {
     fontFamily: "Scotia_W_Rg",
     fontWeight: '400',
     color: "white"
 }
+
 export default class WhyScotiaBenifits extends Component {
 
     render() {
@@ -34,21 +34,21 @@ export default class WhyScotiaBenifits extends Component {
                     <Box mb={3.0}>
                         <Box mb={3.0}>
                             <Typography style={SUB_HEADER} align="left" variant="subtitle1" component="h5">
-                                As a current student, or a recent graduate, money is undoubtedly on your mind. At Scotiabank, we provide you with not only base competitive market rate compensation, but incentive pay, insurance, retirement and savings plans. As a part of the Scotiabank team, we also enjoy various discount perks from a wide variety of food, entertainment, and services.
+                                {WhyScotiaBenifitsPara1}
                             </Typography>
                         </Box>
 
                         <Typography style={HEADER} align="left" variant="h1" component="h1"> Responsibilities </Typography>
                         <Box mb={3.0}>
                             <Typography style={SUB_HEADER} align="left" variant="subtitle1" component="h5">
-                                At Scotiabank, we expect our employees to display not only the requirements of their role, but an ideology that we call AOO (Attitude, Ownership, and Opportunity).
+                                {WhyScotiaBenifitsPara2}
                             </Typography>
                         </Box>
 
                         <Typography style={HEADER} align="left" variant="h1" component="h1"> Opportunities </Typography>
                         <Box mb={3.0}>
                             <Typography style={SUB_HEADER} align="left" variant="subtitle1" component="h5">
-                                Scotiabank provides you with numerous opportunities to learn, to network, and to grow. You’ll be provided with tasks and projects to apply what you learn and showcase your skills. We’ll assist you in setting up coffee chats and job shadows to help you find your path. We’re passionate about the growth of our futureleaders, and the impacts that they can bring.
+                                {WhyScotiaBenifitsPara3}
                             </Typography>
                         </Box>
                     </Box>

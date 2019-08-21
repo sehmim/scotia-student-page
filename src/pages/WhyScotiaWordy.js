@@ -4,9 +4,8 @@ import Typography from '@material-ui/core/Typography';
 import '../styles/why-scotia.sass'
 import { Box } from '@material-ui/core';
 
+import { DETAIL_PARA } from "../utils/FirstThreePagesText";
 
-const DETAIL_PARA = "Scotiabank has built a strong legacy of trust and commitment to its worldwide clients over the past 187 years. Following strict corporate governance practices allows us to respond to challenges and opportunities with legal and ethical actions. Our integrity is displayed in every decision we make. Whether it be upholding human rights, protecting our customers’ money, privacy and data or promoting a culture of inclusion, we lay foundations for the future through trust."
-// const IMG = "https://www.scotiabank.com/content/dam/scotiabank/corporate/Images/DigitalFactory1.jpg"
 const IMG = require('../assets/temp-bg.jpg')
 
 const SUB_HEADER = {
